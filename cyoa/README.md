@@ -7,4 +7,3 @@ Choose your own adventure stories. [Exercise details](https://github.com/gopherc
 ```
 $ go run cmd/cyoaweb/main.go
 ```
-
