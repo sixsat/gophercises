@@ -15,3 +15,4 @@ Usage of ./quiz:
     -limit int
         the time limit for the quiz in seconds (default 30)
 ```
+
