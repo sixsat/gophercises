@@ -9,7 +9,6 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"path/filepath"
 	"strings"
 )
 
@@ -56,7 +55,7 @@ var (
 )
 
 func init() {
-	tmpl = template.Must(template.ParseFiles(filepath.Clean(tmplPath)))
+	tmpl = template.Must(template.ParseFiles(tmplPath))
 }
 
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
