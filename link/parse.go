@@ -39,7 +39,7 @@ func getText(n *html.Node) string {
 	return strings.Join(strings.Fields(ret), " ")
 }
 
-// linkNode return a slice of HTML node containing the a tag.
+// linkNode return a slice of HTML node containing the <a> tag.
 func linkNode(n *html.Node) []*html.Node {
 	if n.Type == html.ElementNode && n.Data == "a" {
 		return []*html.Node{n}
